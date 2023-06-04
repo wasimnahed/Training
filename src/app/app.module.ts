@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { FromComponent } from './Observable-operators/from/from.component';
+import { OfComponent } from './Observable-operators/of/of.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     ParentComponent,
     ChildComponent,
     TodoListComponent,
+    FromComponent,
+    OfComponent,
     
   ],
   imports: [
