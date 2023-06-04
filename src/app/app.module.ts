@@ -8,6 +8,8 @@ import { ChildComponent } from './child/child.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { FromComponent } from './Observable-operators/from/from.component';
 import { OfComponent } from './Observable-operators/of/of.component';
+import { MapComponent } from './Observable-operators/map/map.component';
+import { FilterComponent } from './Observable-operators/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { OfComponent } from './Observable-operators/of/of.component';
     TodoListComponent,
     FromComponent,
     OfComponent,
+    MapComponent,
+    FilterComponent,
     
   ],
   imports: [
