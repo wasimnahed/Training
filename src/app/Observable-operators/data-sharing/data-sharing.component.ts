@@ -8,19 +8,19 @@ import { DataSharingService } from 'src/app/services/data-sharing.service';
 })
 export class DataSharingComponent implements OnInit {
 
-  constructor(private dataSharingService: DataSharingService) { }
+  // constructor(private dataSharingService: DataSharingService) { }
 
   ngOnInit(): void {
   }
 
-  sendData(): void {
-    // send data to subscribers via observable subject
-    this.dataSharingService.sendData('Send Data from data-sharing Component to home Component!');
-}
+//   sendData(): void {
+//     // send data to subscribers via observable subject
+//     this.dataSharingService.sendData('Send Data from data-sharing Component to home Component!');
+// }
 
-clearData(): void {
-    // clear data
-    this.dataSharingService.clearData();
-}
+// clearData(): void {
+//     // clear data
+//     this.dataSharingService.clearData();
+// }
 
 }
