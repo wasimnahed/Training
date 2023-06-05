@@ -28,6 +28,8 @@ import { TimeOutComponent } from './Observable-operators/time-out/time-out.compo
 import { TimeOutWithComponent } from './Observable-operators/time-out-with/time-out-with.component';
 import { TimerComponent } from './Observable-operators/timer/timer.component';
 import { TakeComponent } from './Observable-operators/take/take.component';
+import { DataSharingComponent } from './Observable-operators/data-sharing/data-sharing.component';
+import { HomeComponent } from './Observable-operators/home/home.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { TakeComponent } from './Observable-operators/take/take.component';
     TimeOutWithComponent,
     TimerComponent,
     TakeComponent,
+    DataSharingComponent,
+    HomeComponent,
     
   ],
   imports: [
