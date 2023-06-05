@@ -48,6 +48,30 @@ export class FilterComponent implements OnInit {
   //   })).subscribe(value => {
   //     console.log(value);
   //   });
+
+
+
+  //  let emplist:string[];
+  //   emplist=["wasim","nahed","rarial"];
+  //   console.log(emplist);
+
+    // let numlist:Array<number>
+    // numlist =[1,2,3,4,5];
+    // console.log(numlist);
+    // let results = numlist.filter((num)=>num>2);
+    // console.log(results);
+
+
+    // let numlist:Array<number>
+    // numlist =[1,2,3,4,5];
+    
+
+    // let numlist:Array<number>
+    // numlist =[1,2,3,4,5];
+    // console.log(numlist);
+    // let results = numlist.reduce((acc,num) => acc+num);
+    // console.log(results);
+
   }
 
 }
