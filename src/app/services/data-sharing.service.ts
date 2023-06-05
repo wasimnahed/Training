@@ -8,7 +8,7 @@ export class DataSharingService {
   private subject = new Subject<any>();
   
   constructor() { }
-
+  
   sendData(data: any) {
     this.subject.next({ text: data });
 }
@@ -20,5 +20,4 @@ clearData() {
 getData(): Observable<any> {
     return this.subject.asObservable();
 }
- 
 }
