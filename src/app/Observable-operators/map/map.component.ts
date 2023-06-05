@@ -11,33 +11,33 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-     const source$ = of(1, 2, 3);
+    //  const source$ = of(1, 2, 3);
 
-    source$.pipe(map(value => {
-      return value * 10;
-    })).subscribe(value => {
-      console.log(value);
-    });
+    // source$.pipe(map(value => {
+    //   return value * 10;
+    // })).subscribe(value => {
+    //   console.log(value);
+    // });
 
-    
 
-    const users = [
-      { id: 1, firstName: 'John', lastName:'Doe' },
-      { id: 2, firstName: 'Jane', lastName:'White' },
-      { id: 3, firstName: 'Foo', lastName:'Bar' },
-      { id: 4, firstName: 'Mike', lastName:'Moon' },
-    ];
 
-    const source1$ = from(users);
+    // const users = [
+    //   { id: 1, firstName: 'John', lastName:'Doe' },
+    //   { id: 2, firstName: 'Jane', lastName:'White' },
+    //   { id: 3, firstName: 'Foo', lastName:'Bar' },
+    //   { id: 4, firstName: 'Mike', lastName:'Moon' },
+    // ];
 
-    source1$.pipe(map(value => {
-      return {
-        id: value.id,
-        fullName: `${value.firstName} ${value.lastName}`
-      }
-    })).subscribe(value => {
-      console.log(value);
-    });
+    // const source1$ = from(users);
+
+    // source1$.pipe(map(value => {
+    //   return {
+    //     id: value.id,
+    //     fullName: `${value.firstName} ${value.lastName}`
+    //   }
+    // })).subscribe(value => {
+    //   console.log(value);
+    // });
 
     // let usersData = [
     //   { id: 1, name: 'aa1', sal: 200, gender: 'm' },

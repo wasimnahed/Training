@@ -22,32 +22,32 @@ export class FilterComponent implements OnInit {
 
 
 
-    const cities = [
-      {
-        name: 'Bangalore',
-        country: 'India'
-      },
-      {
-        name: 'Mumbai',
-        country: 'India'
-      },
-      {
-        name: 'Kathmandu',
-        country: 'Nepal'
-      },
-      {
-        name: 'Pokhara',
-        country: 'Nepal'
-      }
-    ];
+  //   const cities = [
+  //     {
+  //       name: 'Bangalore',
+  //       country: 'India'
+  //     },
+  //     {
+  //       name: 'Mumbai',
+  //       country: 'India'
+  //     },
+  //     {
+  //       name: 'Kathmandu',
+  //       country: 'Nepal'
+  //     },
+  //     {
+  //       name: 'Pokhara',
+  //       country: 'Nepal'
+  //     }
+  //   ];
 
-    const source$ = from(cities);
+  //   const source$ = from(cities);
 
-    source$.pipe(filter(value => {
-      return value.country === 'Nepal' ;
-    })).subscribe(value => {
-      console.log(value);
-    });
+  //   source$.pipe(filter(value => {
+  //     return value.country === 'Nepal' ;
+  //   })).subscribe(value => {
+  //     console.log(value);
+  //   });
   }
 
 }

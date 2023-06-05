@@ -11,30 +11,30 @@ export class FromComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const source$ = from([10, 20, 30]);
+    // const source$ = from([10, 20, 30]);
 
-    source$.subscribe(value => {
-      console.log(value);
-    });
+    // source$.subscribe(value => {
+    //   console.log(value);
+    // });
 
-    const source1$ = from("Hello world!");
+    // const source1$ = from("Hello world!");
 
-    source1$.subscribe(value => {
-      console.log(value);
-    });
+    // source1$.subscribe(value => {
+    //   console.log(value);
+    // });
 
-    const countries = new Map();
+    // const countries = new Map();
 
-    countries.set('in', 'India');
-    countries.set('np', 'Nepal');
-    countries.set('jp', 'Japan');
-    countries.set('br', 'Brazil');
+    // countries.set('in', 'India');
+    // countries.set('np', 'Nepal');
+    // countries.set('jp', 'Japan');
+    // countries.set('br', 'Brazil');
 
-    const source2$ = from(countries);
+    // const source2$ = from(countries);
 
-    source2$.subscribe(value => {
-      console.log(value);
-    });
+    // source2$.subscribe(value => {
+    //   console.log(value);
+    // });
   }
   }
 

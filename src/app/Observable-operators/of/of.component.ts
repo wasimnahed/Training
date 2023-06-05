@@ -11,11 +11,11 @@ export class OfComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-     const source$ = of({ name: 'Harshal' }, [1, 2, 3, 4], 'Hello World!');
+    //  const source$ = of({ name: 'Harshal' }, [1, 2, 3, 4], 'Hello World!');
 
-    source$.subscribe(value => {
-      console.log(value);
-    });
+    // source$.subscribe(value => {
+    //   console.log(value);
+    // });
   }
 
 }
