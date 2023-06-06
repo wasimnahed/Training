@@ -125,16 +125,16 @@ export class FilterComponent implements OnInit {
 
 
 
-    const source$ = from(['apple', 'banana', 'grape', 'orange', 'kiwi']);
-    source$.pipe(
-      filter(fruit => fruit.length > 5), // Filter out fruits with length greater than 5
-      map(fruit => fruit.toUpperCase()), // Convert the remaining fruits to uppercase
-      mergeMap(fruit => from(fruit.split(''))), // Split each fruit into individual characters
-      toArray() // Convert the characters into an array
-    )
-      .subscribe(
-        result => console.log(result)
-      );
+    // const source$ = from(['apple', 'banana', 'grape', 'orange', 'kiwi']);
+    // source$.pipe(
+    //   filter(fruit => fruit.length > 5), // Filter out fruits with length greater than 5
+    //   map(fruit => fruit.toUpperCase()), // Convert the remaining fruits to uppercase
+    //   mergeMap(fruit => from(fruit.split(''))), // Split each fruit into individual characters
+    //   toArray() // Convert the characters into an array
+    // )
+    //   .subscribe(
+    //     result => console.log(result)
+    //   );
 
 
   }
