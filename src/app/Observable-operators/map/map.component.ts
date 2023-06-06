@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { filter, from, map, of, tap } from 'rxjs';
+import { catchError, filter, from, map, mergeMap, of, tap } from 'rxjs';
 
 @Component({
   selector: 'app-map',
@@ -57,16 +57,38 @@ export class MapComponent implements OnInit {
     //     modifiedFruit => console.log(modifiedFruit)
     //   );
 
-    const source$ = of(1, 2, 3, 4, 5);
+    // const source$ = of(1, 2, 3, 4, 5)
+    // // Use the map(), filter(), and tap() operators
+    // source$.pipe(
+    //   tap(value => console.log('Original value:', value)),
+    //   filter(value => value % 2 === 0),
+    //   map(value => value * 10),
+    //   tap(value => console.log('Modified value:', value))
+    // )
+    // .subscribe();
 
-    // Use the map(), filter(), and tap() operators
-    source$.pipe(
-      tap(value => console.log('Original value:', value)),
-      filter(value => value % 2 === 0),
-      map(value => value * 10),
-      tap(value => console.log('Modified value:', value))
-    )
-    .subscribe();
+//     const source$ = of('data1', 'data2', 'data3');
+
+// // Use the map(), mergeMap(), and catchError() operators
+// source$.pipe(
+//   map(data => {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         if (data === 'data3') {
+//           reject('Error occurred for data2');
+//         } else {
+//           resolve(data.toUpperCase());
+//         }
+//       }, 5000);
+//     });
+//   }),
+//   mergeMap(promise => promise),
+//   catchError(error => of(`Error: ${error}`))
+// )
+// .subscribe(
+//   transformedData => console.log(transformedData)
+// );
+
 
 
     // let usersData = [
