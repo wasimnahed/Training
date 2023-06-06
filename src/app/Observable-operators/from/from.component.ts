@@ -93,18 +93,18 @@ export class FromComponent implements OnInit {
     //     result => console.log(result)
     //   );
 
-
-    const numbers = [1, 2, 3, 4, 5];
-    const source$ = from(numbers);
-    source$.pipe(
-      filter(num => num % 2 === 0), // Filter out even numbers
-      map(num => num * 10), // Multiply the remaining numbers by 10
-      mergeMap(num => interval(1000).pipe(take(5), map(i => num + i))), // Generate an interval sequence for each number
-      take(10) // Take only the first 10 values
-    )
-      .subscribe(
-        result => console.log(result)
-      );
+// Create an Observable from the array
+    // const numbers = [1, 2, 3, 4, 5];
+    // const source$ = from(numbers);
+    // source$.pipe(
+    //   filter(num => num % 2 === 0), // Filter out even numbers
+    //   map(num => num * 10), // Multiply the remaining numbers by 10
+    //   mergeMap(num => interval(1000).pipe(take(5), map(i => num + i))), // Generate an interval sequence for each number
+    //   take(10) // Take only the first 10 values
+    // )
+    //   .subscribe(
+    //     result => console.log(result)
+    //   );
 
 
   }

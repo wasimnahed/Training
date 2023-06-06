@@ -11,9 +11,6 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
- 
   addTask(item: string) {
     // console.log(item);
     this.list.push(
