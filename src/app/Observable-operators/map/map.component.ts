@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from, map, of } from 'rxjs';
+import { filter, from, map, of, tap } from 'rxjs';
 
 @Component({
   selector: 'app-map',
@@ -39,6 +39,36 @@ export class MapComponent implements OnInit {
     //   console.log(value);
     // });
 
+
+    // const source$ = of(1, 2, 3, 4, 5);
+    // source$.pipe(
+    //   map(value => value + 10)
+    // )
+    // .subscribe(
+    //   modifiedValue => console.log(modifiedValue)
+    // );
+
+
+    // const source$ = of('apple', 'banana', 'orange');
+    // source$.pipe(
+    //   map(fruit => fruit.toUpperCase())
+    // )
+    //   .subscribe(
+    //     modifiedFruit => console.log(modifiedFruit)
+    //   );
+
+    const source$ = of(1, 2, 3, 4, 5);
+
+    // Use the map(), filter(), and tap() operators
+    source$.pipe(
+      tap(value => console.log('Original value:', value)),
+      filter(value => value % 2 === 0),
+      map(value => value * 10),
+      tap(value => console.log('Modified value:', value))
+    )
+    .subscribe();
+
+
     // let usersData = [
     //   { id: 1, name: 'aa1', sal: 200, gender: 'm' },
     //   { id: 2, name: 'aa2', sal: 100, gender: 'f' },
@@ -64,20 +94,20 @@ export class MapComponent implements OnInit {
     //   }
     // })
     // console.log(usersData);
- 
-// usersData.sort((a, b) => {
-//   if (a.gender === 'm' && b.gender === 'f') {
-//     return -1; 
-//   } else if (a.gender === 'f' && b.gender === 'm') {
-//     return 1; 
-//   } else {
-//     return a.sal - b.sal;
-//   }
-// });
 
-// console.log(usersData);
+    // usersData.sort((a, b) => {
+    //   if (a.gender === 'm' && b.gender === 'f') {
+    //     return -1; 
+    //   } else if (a.gender === 'f' && b.gender === 'm') {
+    //     return 1; 
+    //   } else {
+    //     return a.sal - b.sal;
+    //   }
+    // });
 
-    }
+    // console.log(usersData);
+
   }
+}
 
 

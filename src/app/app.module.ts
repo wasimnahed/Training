@@ -30,6 +30,7 @@ import { TimerComponent } from './Observable-operators/timer/timer.component';
 import { TakeComponent } from './Observable-operators/take/take.component';
 import { DataSharingComponent } from './Observable-operators/data-sharing/data-sharing.component';
 import { HomeComponent } from './Observable-operators/home/home.component';
+import { TimestampComponent } from './Observable-operators/timestamp/timestamp.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,8 @@ import { HomeComponent } from './Observable-operators/home/home.component';
     TakeComponent,
     DataSharingComponent,
     HomeComponent,
+    TimestampComponent,
+
     
   ],
   imports: [

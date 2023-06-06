@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ParentComponent implements OnInit {
 
   inputstring:string="It is parent component";
+  
   apiMenu: string ='';
   apiMenu2: string ='';
   constructor() { }
